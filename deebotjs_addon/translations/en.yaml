@@ -1,0 +1,10 @@
+configuration:
+  message:
+    name: Message
+    description: The message that will be printed to the log when starting this example add-on.
+  MQTT_HOST:
+    name: MQTT_HOST
+    description: The message that will be printed to the log when starting this example add-on.
+  MQTT_USER:
+    name: MQTT_USER
+    description: The message that will be printed to the log when starting this example add-on.

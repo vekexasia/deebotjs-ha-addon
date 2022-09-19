@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "homeassistant-ws": "^0.2.2",
+    "mqtt": "^4.3.7"
+  }
+}

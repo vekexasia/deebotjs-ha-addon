@@ -1,0 +1,33 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: DEEBOT 920 Addon
+version: "1.2.4"
+slug: deebotjs-addon
+description: Deebot JS mqtt addon
+homeassistant_api: true
+url: "https://github.com/home-assistant/addons-example/tree/main/example"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+map:
+  - share:rw
+services:
+  - mqtt:need
+options:
+  MQTT_HOST: ""
+  MQTT_USER: ""
+  MQTT_PASSWORD: ""
+  DEEBOT_USER: ""
+  DEEBOT_PASSWORD: ""
+  DEEBOT_COUNTRCODE: "it"
+schema:
+  MQTT_HOST: "str"
+  MQTT_USER: "str"
+  MQTT_PASSWORD: "password"
+  DEEBOT_USER: "str"
+  DEEBOT_PASSWORD: "password"
+  DEEBOT_COUNTRCODE: "str"
+# image: "ghcr.io/home-assistant/{arch}-addon-example"
